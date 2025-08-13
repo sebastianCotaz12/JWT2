@@ -57,8 +57,7 @@ export class AuthService {
   async buscarA(){
         const lista= await Usuario.query()
         .select('email')
-        .whereLike('email','
-          a%')
+        .whereLike('email','a%')
         return  lista
 
     }
